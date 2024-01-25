@@ -12,12 +12,25 @@
   },
   "author": " ",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4",
     "prettier": "^3.2.4",
     "sass": "^1.70.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": "eslint --fix",
+    "*.{json,md,css,scss,yaml,yml}": "prettier --write"
   }
+  
+  
+
+
 }
