@@ -2,6 +2,9 @@
   "plugins": {
     "posthtml-doctype": {
       "doctype": "HTML 5.0"
+    },
+    "posthtml-include": {
+      "root": "./src"
     }
   }
 }
