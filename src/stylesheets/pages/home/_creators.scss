@@ -1,0 +1,70 @@
+@use '../../abstracts/' as *;
+
+.team {
+  margin-top: 6.4rem;
+}
+
+.team-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 4.3rem;
+
+  .team-top {
+    @include between;
+    align-items: center;
+  }
+
+  .team-heading {
+    @include font(3.7rem, 700);
+  }
+
+  .team-see {
+    @include font(1.6rem, 400);
+    color: $primary-color;
+    text-transform: capitalize;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .team-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    counter-reset: team_card;
+  }
+
+  @include xxl {
+    .team-card:nth-child(n+6) {
+      display: none;
+    }
+
+    .team-heading {
+      font-size: 2.8rem;
+    }
+
+    .name {
+      font-size: 1.6rem;
+    }
+  }
+
+  @include md {
+    .team-card:nth-child(4) {
+      display: none;
+    }
+
+    .team-card {
+      flex-basis: 45%;
+    }
+
+    .team-heading {
+      font-size: 1.6rem;
+    }
+
+    .team-see {
+      font-size: 1.2rem;
+    }
+  }
+}

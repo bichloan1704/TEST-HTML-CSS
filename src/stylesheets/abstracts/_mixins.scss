@@ -1,0 +1,42 @@
+@mixin font($font-size, $font-weight: normal) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin slow($time: 0.25s, $type: linear) {
+  transition: $time $type;
+}
+
+@mixin center-element($gap: 0) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin center-vertical($gap: 0) {
+  display: flex;
+  align-items: center;
+  gap: $gap;
+}
+
+@mixin center-horizontal($gap) {
+  display: flex;
+  justify-content: center;
+  gap: $gap;
+}
+
+@mixin between() {
+  display: flex;
+  justify-content: space-between;
+  @content;
+}
+
+@mixin limitText($line) {
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}

@@ -1,0 +1,113 @@
+@use "../../abstracts/" as *;
+@use "../../components/" as *;
+
+.explore {
+  margin-top: 6.4rem;
+
+  .btn-wrapper {
+    display: block;
+    text-align: center;
+
+    .load-more {
+      @extend .btn;
+      @include font(1.6rem, 400);
+      color: $primary-color;
+      border: 1px solid $primary-color;
+      border-radius: 2.4rem;
+      padding: 1rem 2.4rem;
+      margin-top: 3.2rem;
+    }
+  }
+
+  @include xs {
+    .load-more {
+      @include center-element;
+      width: 100%;
+    }
+  }
+}
+
+.explore-frame {
+  .explore-heading {
+    @include font(3.7rem, 700);
+  }
+
+  .explore-func,
+  .explore-desc {
+    line-height: 1.5;
+    margin-top: 2.4rem;
+  }
+
+  .explore-desc {
+    @include font(1.6rem, 400);
+  }
+
+  .explore-func {
+    @include between;
+    align-items: center;
+  }
+
+  .explore-category,
+  .explore-filter {
+    @include font(1.6rem, 400);
+    @include slow;
+    border-radius: 2.4rem;
+    border: 1px solid $primary-color;
+  }
+
+  .explore-categories {
+    @include center-vertical(1.2rem);
+  }
+
+  .explore-category {
+    padding: 8px 16px;
+  }
+
+  .explore-category:not(:first-child) {
+    color: $primary-color;
+  }
+
+  .explore-category:not(:first-child):hover {
+    color: $white;
+    background-color: $primary-color;
+  }
+
+  .explore-filter {
+    @extend .btn;
+    @extend .btn-bg;
+    padding: 1rem 2.4rem;
+  }
+
+  @include lg {
+    .explore-heading {
+      font-size: 2.8rem;
+    }
+
+    .explore-func {
+      justify-content: end;
+    }
+
+    .explore-categories {
+      display: none;
+      justify-self: end;
+    }
+  }
+
+  @include sm {
+    .explore-heading {
+      font-size: 1.6rem;
+    }
+
+    .explore-desc {
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.nft-cards .nft-card.hide {
+  display: none;
+
+  @include sm {
+    display: block;
+  }
+}

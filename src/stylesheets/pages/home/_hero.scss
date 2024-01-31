@@ -1,0 +1,15 @@
+@use '../../abstracts' as *;
+
+body {
+  background-image: url(../assets/images/desktop/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  // @include xl {
+  //   background-image: url(../assets/images/tablet/bg.png);
+  // }
+
+  // @include sm {
+  //   background-image: url(../assets/images/mobile/bg.png);
+  // }
+}
