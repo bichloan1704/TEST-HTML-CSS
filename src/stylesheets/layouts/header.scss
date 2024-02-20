@@ -1,31 +1,41 @@
 @use '../abstracts' as *;
 
-.container {
-  max-width: 192rem;
-  margin-inline: auto;
+.header, .header-middle, .header-right{
+  @include between{
+      align-items: center;
+  }
 }
-.body-content {  
-  padding: 3.2rem 14rem;
+.header-middle{
+    margin: 0px 100px;
+}
+.menus{
+    margin: 3rem;
+    
+}
+.menus a {
+    color: #8E8FA5;
+}
+body{
+    background-image: url(../assets/images/desktop/bg.png);
+    background-size: cover;     
+    background-repeat: no-repeat;
+}
+.header{
+    font-size: 16px;    
+}
+.header-right a{
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+.header-right div{
+    margin: 5px;
+}
+.header-right .signup a{
+    background-color: white;
+    padding: 5px 10px;
+    border: solid #E6E0EC 1px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 2px 0px #0000001A;
 
-  @include lg {
-    padding: 3.2rem 7rem;
-  }
-
-  @include md {
-    padding: 1.8rem 2.7rem;
-  }
-}
-.header {
-  @include between {
-    align-items: center;
-  }
-}
-.header-mid{
-  @include between {
-    align-items: center;
-  }
-}
-.menus, .header-right{
-  display: flex;
-  margin: 2rem;
 }

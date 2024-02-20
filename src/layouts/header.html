@@ -1,19 +1,21 @@
-<header class="header">
+<div class="header">
   <div class="header-left">
-    <img src="../assets/icons/logo.svg" alt="" srcset="">
+    <img src="../assets/icons/logo.svg" alt="logo">
   </div>
-  <div class="header-mid">
-    <include
+  <div class="header-middle">
+    <include 
       src="./components/menus.html"
       locals='{
-        "menus": "[`Home`, `Courses`, `Discover`, `Live lessons`, `My content`]"      
+        "menus": "[`Home`, `Courses`, `Discover`, `Live lessons`, `My content`]"
       }'
     ></include>
   </div>
   <div class="header-right">
-    <a href="">Login</a>
-    <button class="btn">
-      <span>Sign up</span>
-    </button>
+    <div class="login">
+      <a href="">Log in</a>
+    </div>
+    <div class="signup">
+      <a href="">Sign up</a>
+    </div>
   </div>
-</header>
+</div>

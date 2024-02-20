@@ -1,0 +1,63 @@
+@use '../abstracts' as *;
+
+.footer, .footer-mid{
+    @include between
+}
+.footer-left{
+    width: 279px;
+}
+.footer-mid{
+    width: 216px;
+}
+.footer-right{
+    width: 314px;
+}
+.body{
+    padding-top: 16px;
+    font-size: 15px;
+    color: #79757F;
+}
+.footer-child {
+    margin: 15px 0px;
+}
+.footer-child a{
+    font-size: 16px;
+    color: #79757F;        
+}
+.head{
+    font-weight: 500;
+}
+.footer > div {
+    font-size: 14px;
+}
+.footer-right .head{
+    color: #79757F;
+    font-size: 20px;
+}
+.footer-right .form{
+    width: 314px;
+    height: 62px;
+    padding-top: 10px;
+    display: flex;
+}
+.footer-right input a{
+    width: 100%;
+    
+}
+.footer-right a{
+    background: black;
+    color: white;
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+.footer-right input{
+    background-color: #F1EFFF;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;    
+    border: solid 1px #E6E0EC;
+    color: #A9A9C0;
+    font-size: 15px;    
+}
