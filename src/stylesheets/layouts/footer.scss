@@ -22,10 +22,10 @@
 }
 .footer-child a{
     font-size: 16px;
-    color: #79757F;        
+    color: #79757f;        
 }
 .head{
-    font-weight: 500;
+    font-weight: lighter;
 }
 .footer > div {
     font-size: 14px;
@@ -34,30 +34,29 @@
     color: #79757F;
     font-size: 20px;
 }
-.footer-right .form{
+.footer-input{
     width: 314px;
     height: 62px;
-    padding-top: 10px;
+    margin-top: 15px;
+    background: #F1EFFF;
     display: flex;
+    border-radius: 10px;
+    border: solid 2px #E6E0EC;
 }
-.footer-right input a{
-    width: 100%;
-    
-}
-.footer-right a{
+.footer-input button{
     background: black;
     color: white;
-    padding-top: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 10px 20px;
     border-radius: 10px;
+    border: none;
+    font-size: 16px;
 }
-.footer-right input{
-    background-color: #F1EFFF;
+.footer-field{
+    background-color: transparent;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 10px;    
-    border: solid 1px #E6E0EC;
+    border: none;
     color: #A9A9C0;
     font-size: 15px;    
 }
