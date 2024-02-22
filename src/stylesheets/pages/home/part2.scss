@@ -1,0 +1,23 @@
+@use "../../abstracts/" as *;
+
+.part2{
+    margin-top: 300px;
+}
+.part2-container{
+    margin-top: 100px;
+    width: 582px;        
+}
+.part2-button{
+    background: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+} 
+.part2 .text1{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    @include font(57px, 600)
+}
+.part2 .text11{
+    
+}
