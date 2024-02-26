@@ -7,25 +7,22 @@
     margin-top: 100px;
     width: 100%;
 }
-.part1 .text1{
-    background: linear-gradient(0deg, #0D154B, #0D154B);        
+.part1 .text1{    
+    color: $black
 }
-.part1 .text2{
-    background: linear-gradient(90deg, #6F48FC 21.63%, #D07EF7 60.55%, #56C6E7 79.11%);
+.part1 .text2{    
+    @include gradient;
 }
 .part1 .text1, .part1 .text2{
-    @include font(57px, 550);
-    background-clip: text;
-    color: transparent;
+    @include font(57px, 600);
 }
 .part1 .text3{
     @include font(16px, 500);
-    width: 557px;
+    width: 607px;
     margin-top: 20px;
 }
 .part1-button{
-    background-color: #252739;
-    color: white;
+    @include blackbutton;    
     size: 16px;
     margin-top: 30px;    
 }

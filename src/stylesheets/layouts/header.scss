@@ -12,7 +12,7 @@
     margin: 3rem;   
 }
 .menus a {
-    color: #8E8FA5;
+    color: $text-grey;
 }
 body{
     background-image: url(../assets/images/desktop/bg.png);
@@ -35,5 +35,5 @@ body{
     padding: 5px 10px;
     border: solid #E6E0EC 1px;
     border-radius: 8px;
-    box-shadow: 0px 2px 2px 0px #0000001A;
+    box-shadow: 0px 2px 2px 0px #0000001A;    
 }

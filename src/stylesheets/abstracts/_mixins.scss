@@ -40,3 +40,14 @@
   text-overflow: ellipsis;
   word-break: break-word;
 }
+
+@mixin gradient(){  
+  background: linear-gradient(90deg, #6F48FC 21.63%, #D07EF7 60.55%, #56C6E7 79.11%);   
+  background-clip: text;
+  color: transparent;
+}
+
+@mixin blackbutton{
+  background-color: #252739;
+  color: white;
+}

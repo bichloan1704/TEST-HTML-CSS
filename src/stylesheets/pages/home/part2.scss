@@ -1,23 +1,27 @@
 @use "../../abstracts/" as *;
 
 .part2{
-    margin-top: 300px;
+    margin-top: 250px;
 }
 .part2-container{
-    margin-top: 100px;
-    width: 582px;        
+    margin-top: 100px;    
 }
 .part2-button{
     background: white;
+    border: 1px #E6E0EC solid;
     border-radius: 25px;
     padding: 10px 15px;
+    box-shadow: 0px 5px 3px 0px #0000000D;
+    margin-bottom: 30px;
 } 
-.part2 .text1{
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
+.part2 .text1, .part2 .text2, .part2 .text3{    
     @include font(57px, 600)
 }
-.part2 .text11{
-    
+.part2 .text1{
+    @include gradient
 }
+.part2 .text2, .part2 .text3{
+    color: $black;
+    margin-left: 10px;
+}
+

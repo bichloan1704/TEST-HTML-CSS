@@ -1,5 +1,8 @@
 @use '../abstracts' as *;
 
+.footer{
+    margin-top: 100px;
+}
 .footer, .footer-mid{
     @include between
 }
@@ -15,14 +18,14 @@
 .body{
     padding-top: 16px;
     font-size: 15px;
-    color: #79757F;
+    color: $text-grey;
 }
 .footer-child {
     margin: 15px 0px;
 }
 .footer-child a{
     font-size: 16px;
-    color: #79757f;        
+    color: $text-grey;        
 }
 .head{
     font-weight: lighter;
@@ -31,7 +34,7 @@
     font-size: 14px;
 }
 .footer-right .head{
-    color: #79757F;
+    color: $text-grey;
     font-size: 20px;
 }
 .footer-input{

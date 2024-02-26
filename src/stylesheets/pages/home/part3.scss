@@ -1,0 +1,32 @@
+@use "../../abstracts/" as *;
+
+.part3{
+    margin-top: 40px;
+}
+.part3-contanier{
+    margin-left: 8%;
+    width: 1024px;
+    height: 751px;
+    background-image: url(../assets/images/desktop/part3.png);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    box-shadow: 10px 37px 80px 10px #0000001A;
+}
+.part3 .text1{
+    padding-top: 440px;
+}
+.part3 .text1, .part3 .text2, .part3 .text3{
+    @include font(45px, 500);
+    color: $text-grey;
+}
+.part3 .text4{
+    @include font(16px, 500);
+    margin-top: 20px;
+}
+.part3-button{
+    @include blackbutton;
+    margin-top: 60px;
+}
+.part3 .text2{
+    @include gradient;
+}
