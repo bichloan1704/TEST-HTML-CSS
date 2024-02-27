@@ -1,0 +1,28 @@
+@use "../../abstracts/" as *;
+
+.part1{
+    @include between;   
+}
+.part1-container{
+    margin-top: 100px;
+    width: 100%;
+}
+.part1 .text1{    
+    color: $black
+}
+.part1 .text2{    
+    @include gradient;
+}
+.part1 .text1, .part1 .text2{
+    @include font(57px, 600);
+}
+.part1 .text3{
+    @include font(16px, 500);
+    width: 607px;
+    margin-top: 20px;
+}
+.part1-button{
+    @include blackbutton;    
+    size: 16px;
+    margin-top: 30px;    
+}

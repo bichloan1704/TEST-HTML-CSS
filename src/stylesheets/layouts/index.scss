@@ -1,0 +1,25 @@
+@use '../abstracts' as *;
+@forward 'footer';
+@forward 'header';
+
+.container {
+  max-width: 192rem;
+  margin-inline: auto;
+}
+.body-content {
+  padding: 1.2rem 14rem;
+
+  @include lg {
+    padding: 3.2rem 7rem;
+  }
+
+  @include md {
+    padding: 1.8rem 2.7rem;
+  }
+}
+button{
+  padding: 15px 25px;
+  border-radius: 10px;
+  box-shadow: 1px 15px 11px 0px #0000001A;
+  border: none;
+}

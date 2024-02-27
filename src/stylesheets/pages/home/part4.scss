@@ -1,0 +1,19 @@
+@use "../../abstracts/" as *;
+
+.part4{
+    margin-top: 250px;
+}
+.part4-container{
+    margin-top: 100px;    
+    // width: 1160px;
+}
+.part4-head, .part4-head .right{
+    @include between
+}
+.part4-head .left{
+    @include font(20px, 500);
+    color: $black;    
+}
+.part4-head .right{
+    width: 92px;
+}

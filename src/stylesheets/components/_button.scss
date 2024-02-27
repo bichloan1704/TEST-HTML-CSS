@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  color: $white;
+  gap: 1rem;
+  font: inherit;
+
+  &.btn-bg {
+    background-color: $primary-color;
+  }
+}
