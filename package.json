@@ -13,11 +13,9 @@
   "author": " ",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.10.2",
     "eslint": "^8.56.0",
     "husky": "^8.0.3",
     "parcel-bundler": "^1.12.5",
-    "parcel": "^2.10.2",
     "posthtml-doctype": "^1.1.1",
     "posthtml-include": "^1.7.4",
     "prettier": "^3.2.4",
