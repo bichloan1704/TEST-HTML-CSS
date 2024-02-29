@@ -1,0 +1,33 @@
+@use "../../abstracts/" as *;
+
+.part5{
+    background: #FFFFFF;    
+    margin-top: 250px;
+}
+.part5 .text1{
+    @include font(45px, 600);
+    color: $black;
+}
+.part5-container1{
+    padding: 44px;
+}
+.part5-container1 .text2{
+    width: 792px;
+    color: $text-grey;
+    margin-top: 24px;
+    @include font(16px, 400);
+}
+.part5-container2{
+    @include between;
+    width: 996px;
+    padding: 44px 0px;
+    margin-left: 270px;
+    
+}
+.part5_icon img{
+    width: 66px;
+    height: auto;
+}
+.part5_icon{
+    margin: 7px 44px;
+}

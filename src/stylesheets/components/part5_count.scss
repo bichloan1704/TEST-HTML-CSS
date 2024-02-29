@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.count{
+    @include between;
+    width: fit-content;
+}
+.count .text1{
+    @include gradient;
+    @include font(45px, 600);
+}
+.count .text2{
+    @include font(16px, 500);
+    margin-top: 4px;
+}

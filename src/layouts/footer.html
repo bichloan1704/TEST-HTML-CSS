@@ -1,45 +1,47 @@
-<footer class="footer">
-    <div class="footer-left">
-        <div class="head">
-            <img src="../assets/icons/logo_footer.svg" alt="" srcset="">
-        </div>
-        <div class="body">
-            Lorem ipsum dolor sit amet consectetur. Sagittis facilisi nunc vitae morbi odio.
-        </div>
-    </div>
-    <div class="footer-mid">
-        <div class="about">
-            <div class="head">About</div>
+<div class="body-content">
+    <footer class="footer">
+        <div class="footer-left">
+            <div class="head">
+                <img src="../assets/icons/logo_footer.svg" alt="" srcset="">
+            </div>
             <div class="body">
-                <include
-                src="./components/footers.html"
-                locals='{
-                    "footers": "[`FAQ`, `Company`, `Quality`]"
-                }'
-                ></include>
+                Lorem ipsum dolor sit amet consectetur. Sagittis facilisi nunc vitae morbi odio.
             </div>
         </div>
-        <div class="contact">
-            <div class="head">Contact</div>
-            <div class="body">
-                <include
-                src="./components/footers.html"
-                locals='{
-                    "footers": "[`Email`, `Phone No`, `Website`]"
-                }'
-                ></include>
+        <div class="footer-mid">
+            <div class="about">
+                <div class="head">About</div>
+                <div class="body">
+                    <include
+                    src="./components/footers.html"
+                    locals='{
+                        "footers": "[`FAQ`, `Company`, `Quality`]"
+                    }'
+                    ></include>
+                </div>
+            </div>
+            <div class="contact">
+                <div class="head">Contact</div>
+                <div class="body">
+                    <include
+                    src="./components/footers.html"
+                    locals='{
+                        "footers": "[`Email`, `Phone No`, `Website`]"
+                    }'
+                    ></include>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="footer-right">
-        <div class="head">Subscribe For Updates</div>
-        <div class="footer-input">
-            <input type="text" placeholder="Email" class="footer-field">
-            <button class="footer-button">Subscribe</button>
+        <div class="footer-right">
+            <div class="head">Subscribe For Updates</div>
+            <div class="footer-input">
+                <input type="text" placeholder="Email" class="footer-field">
+                <button class="footer-button">Subscribe</button>
+            </div>
+            <div class="body">
+                by subscribing you will be able to hear the latest
+                news and technology updates
+            </div>
         </div>
-        <div class="body">
-            by subscribing you will be able to hear the latest
-            news and technology updates
-        </div>
-    </div>
-</footer>
+    </footer>
+</div>

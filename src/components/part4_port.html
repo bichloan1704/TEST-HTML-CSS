@@ -1,12 +1,29 @@
 <div class="port">
     <div class="body">
         <div class="body_1">
-            <img src="../assets/images/desktop/part4_1.png" alt="logo">
+            <img src="../assets/images/desktop/{{ picture }}" alt="logo">
         </div>
         <div class="body_2">
             <div class="tag">Web Design</div>
-            <div class="price">{{ price }}</div>
+            <h2 class="price">{{ price }}</h2>
         </div>
-        <div class="port_descript">{{ descript }}</div>
+        <div class="body_3">
+            <p>{{ descript }}</p>
+        </div>
+        <div class="body_4">
+            <div class="avt"><img src="../assets/images/desktop/part4_avt.png" alt="logo"></div>
+            <div class="follow">
+                <img src="../assets/icons/follow_icon.svg" alt="logo">
+                <strong>{{ follow }}</strong>
+            </div>
+            <div class="view">
+                <img src="../assets/icons/view_icon.svg" alt="logo">
+                <strong>{{ view }}</strong>
+            </div>
+            <div class="like">
+                <img src="../assets/icons/like_icon.svg" alt="logo">
+                <strong>{{ like }}</strong>
+            </div>
+        </div>
     </div>
 </div>

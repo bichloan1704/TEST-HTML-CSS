@@ -1,21 +1,23 @@
-<div class="header">
-  <div class="header-left">
-    <img src="../assets/icons/logo.svg" alt="logo">
-  </div>
-  <div class="header-middle">
-    <include 
-      src="./components/menus.html"
-      locals='{
-        "menus": "[`Home`, `Courses`, `Discover`, `Live lessons`, `My content`]"
-      }'
-    ></include>
-  </div>
-  <div class="header-right">
-    <div class="login">
-      <a href="">Log in</a>
+<div class="body-content">
+  <div class="header">
+    <div class="header-left">
+      <img src="../assets/icons/logo.svg" alt="logo">
     </div>
-    <div class="signup">
-      <a href="">Sign up</a>
+    <div class="header-middle">
+      <include 
+        src="./components/menus.html"
+        locals='{
+          "menus": "[`Home`, `Courses`, `Discover`, `Live lessons`, `My content`]"
+        }'
+      ></include>
+    </div>
+    <div class="header-right">
+      <div class="login">
+        <a href="">Log in</a>
+      </div>
+      <div class="signup">
+        <a href="">Sign up</a>
+      </div>
     </div>
   </div>
 </div>
