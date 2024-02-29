@@ -1,0 +1,37 @@
+@use "../../abstracts/" as *;
+
+.part7{
+    @include center-element;
+    margin-top: 500px;
+}
+.part7 .head .text1{
+    @include font(24px, 500);
+    color: $text-grey;
+}
+.part7 .head .text2{
+    @include font(45px, 600);
+    margin-top: 20px;
+}
+.part7 .body{
+    background-image: url(../assets/images/desktop/part7.png);
+    width: 1144px;
+    height: 844;
+    margin-top: 90px;   
+    @include center-element; 
+}
+.part7 .body .child{
+    background-color: white;
+    padding: 24px;
+    width: 327px;
+    border-radius: 10px;
+    border: 1px solid #E6E0EC;
+    @include shadow;
+}
+.part7 .body .child .text1{
+    @include font(22px, 600);
+    color: black;
+    margin: 10px 0px;
+}
+.part7 .body .child .text1{
+    @include font(14px, 500);
+}

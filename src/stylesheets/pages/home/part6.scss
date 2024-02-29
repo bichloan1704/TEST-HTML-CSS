@@ -1,0 +1,46 @@
+@use "../../abstracts/" as *;
+
+.part6{
+    width: 100%;
+    @include center-element;    
+    margin-top: 300px;
+}
+.part6-container{
+    background-image: url(../assets/images/desktop/part6.png);
+    background-color: white;
+    width: 1024px;
+    height: 721px;
+    border-radius: 10px;
+    border: 1px solid #E6E0EC;    
+    @include shadow;
+}
+.part6 .child{
+    background-image: url(../assets/images/desktop/part6_child.png);
+    width: 452px;
+    height: 321px;
+    top: 4587px;
+    left: 555px;
+    border-radius: 10px;
+    border: 1px;
+    gap: 20px;
+    position: absolute;
+    bottom: 0px;
+    @include shadow;
+}
+.part6 .child .text1{
+    margin-top: 141px;    
+    @include font(24px, 500);
+    width: 324px;
+}
+.part6 .child .button{
+    @include font(16px, 500);
+    @include shadow;
+    background-color: #252739;
+    color: white;
+    margin-top: 30px;
+    width: 196px;
+    height: 56px;
+    padding: 16px, 24px, 16px, 24px;
+    border-radius: 10px;
+    gap: 10px;
+}

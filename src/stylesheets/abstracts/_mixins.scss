@@ -3,10 +3,6 @@
   font-weight: $font-weight;
 }
 
-@mixin slow($time: 0.25s, $type: linear) {
-  transition: $time $type;
-}
-
 @mixin center-element($gap: 0) {
   display: flex;
   justify-content: center;
@@ -14,31 +10,10 @@
   gap: $gap;
 }
 
-@mixin center-vertical($gap: 0) {
-  display: flex;
-  align-items: center;
-  gap: $gap;
-}
-
-@mixin center-horizontal($gap) {
-  display: flex;
-  justify-content: center;
-  gap: $gap;
-}
-
 @mixin between() {
   display: flex;
   justify-content: space-between;
   @content;
-}
-
-@mixin limitText($line) {
-  display: -webkit-box;
-  -webkit-line-clamp: $line;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-word;
 }
 
 @mixin gradient(){  
@@ -50,4 +25,8 @@
 @mixin blackbutton{
   background-color: #252739;
   color: white;
+}
+
+@mixin shadow{
+  box-shadow: 10px 20px 50px 10px #0000001A;
 }

@@ -7,7 +7,7 @@
     width: 266px;
     height: 379px;
     padding-left: 16px;
-    box-shadow: 10px 20px 20px 10px #00000008;
+    @include shadow;
 }
 .port .body{
     width: 234px;
