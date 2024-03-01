@@ -1,26 +1,29 @@
 @use '../abstracts' as *;
 
+.header{
+//  width: 100%;   
+}
 .header, .header-middle, .header-right{
   @include between{
       align-items: center;
   }
+  font-size: 16px;    
 }
 .header-middle{
-    margin: 0px 100px;
+    // margin: 0px 100px;
 }
 .menus{
-    margin: 3rem;   
+    margin: 2rem;   
+    @include tablet{
+        display: none;        
+    }
 }
 .menus a {
     color: $text-grey;
 }
-body{
-    background-image: url(../assets/images/desktop/bg.png);
-    background-size: cover;     
-    background-repeat: no-repeat;
-}
-.header{
-    font-size: 16px;    
+.header-left img{
+    min-width: 136px;
+    height: auto;    
 }
 .header-right a{
     @include font(16px, 500);
@@ -30,10 +33,31 @@ body{
 .header-right div{
     margin: 5px;
 }
-.header-right .signup a{
+.header-right .login{
+    max-width: 48px;
+    height: 24px;
+    @include phone{
+        display: none;
+    }
+}
+.header-right .signup{
+    max-width: 102px;
+    height: 44px;
+    margin-top: 25px;
+    @include phone{
+        display: none;
+    }
+}
+.header-right .signup a{    
     background-color: white;
     padding: 5px 10px;
     border: solid #E6E0EC 1px;
     border-radius: 8px;
     box-shadow: 0px 2px 2px 0px #0000001A;    
 }
+.header-right .menu_icon{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+}    

@@ -1,44 +1,16 @@
 $media: (
-  'xxl': 1420px,
-  'xl': 1280px,
-  'lg': 992px,
-  'md': 768px,
-  'sm': 576px,
-  'xs': 320px
+  'tablet': 1088px,
+  'phone': 720px
 );
 
-@mixin xxl {
-  @media screen and (max-width: map-get($media, 'xxl')) {
+@mixin tablet {
+  @media screen and (max-width: map-get($media, 'tablet')) {
     @content;
   }
 }
 
-@mixin xl {
-  @media screen and (max-width: map-get($media, 'xl')) {
-    @content;
-  }
-}
-
-@mixin lg {
-  @media screen and (max-width: map-get($media, 'lg')) {
-    @content;
-  }
-}
-
-@mixin md {
-  @media screen and (max-width: map-get($media, 'md')) {
-    @content;
-  }
-}
-
-@mixin sm {
-  @media screen and (max-width: map-get($media, 'sm')) {
-    @content;
-  }
-}
-
-@mixin xs {
-  @media screen and (max-width: map-get($media, 'xs')) {
+@mixin phone {
+  @media screen and (max-width: map-get($media, 'phone')) {
     @content;
   }
 }

@@ -8,6 +8,7 @@
     height: 379px;
     padding-left: 16px;
     @include shadow;
+    overflow: hidden;
 }
 .port .body{
     width: 234px;

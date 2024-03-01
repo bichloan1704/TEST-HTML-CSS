@@ -1,7 +1,7 @@
 @use "../../abstracts/" as *;
 
 .part1{
-    @include between;   
+    @include center-element;   
 }
 .part1-container{
     margin-top: 100px;
@@ -18,7 +18,7 @@
 }
 .part1 .text3{
     @include font(16px, 500);
-    width: 607px;
+    max-width: 607px;
     margin-top: 20px;
 }
 .part1-button{

@@ -2,7 +2,11 @@
 
 .part7{
     @include center-element;
+    // width: 100%;
     margin-top: 500px;
+}
+.part7-container{
+    width: 100%;
 }
 .part7 .head .text1{
     @include font(24px, 500);
@@ -14,8 +18,10 @@
 }
 .part7 .body{
     background-image: url(../assets/images/desktop/part7.png);
-    width: 1144px;
-    height: 844;
+    background-repeat: no-repeat;
+    background-position: center 0px;
+    width: 100%;
+    height: 844px;
     margin-top: 90px;   
     @include center-element; 
 }

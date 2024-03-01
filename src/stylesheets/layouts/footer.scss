@@ -11,6 +11,9 @@
 }
 .footer-mid{
     width: 216px;
+    @include tablet{
+        display: none;
+    }
 }
 .footer-right{
     width: 314px;

@@ -12,20 +12,20 @@
     padding: 44px;
 }
 .part5-container1 .text2{
-    width: 792px;
+    max-width: 792px;
     color: $text-grey;
     margin-top: 24px;
     @include font(16px, 400);
 }
 .part5-container2{
     @include between;
-    width: 996px;
+    // width: 100%;
     padding: 44px 0px;
-    margin-left: 270px;
-    
+    margin: 0px 15%; 
+    flex-wrap: wrap;
 }
 .part5_icon img{
-    width: 66px;
+    min-width: 66px;
     height: auto;
 }
 .part5_icon{

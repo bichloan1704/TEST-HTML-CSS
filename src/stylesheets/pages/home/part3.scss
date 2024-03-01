@@ -4,12 +4,15 @@
     margin-top: 40px;
 }
 .part3-contanier{
-    margin-left: 8%;
-    width: 1024px;
-    height: 751px;
+    margin-left: 2%;
+    // width: fit-content;
+    // max-width: 1024px;
+    // height: 751px;
     background-image: url(../assets/images/desktop/part3.png);
+    background-size: cover;
     background-position: center 0px;
     background-repeat: no-repeat;
+    border-radius: 10px;
     box-shadow: 10px 20px 50px 10px #0000001A;
 }
 .part3 .text1{
@@ -25,7 +28,7 @@
 }
 .part3-button{
     @include blackbutton;
-    margin-top: 60px;
+    margin: 60px;
 }
 .part3 .text2{
     @include gradient;

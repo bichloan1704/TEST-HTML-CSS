@@ -2,20 +2,19 @@
 @forward 'footer';
 @forward 'header';
 
+body{
+  
+}
 .container {
-  max-width: 192rem;
-  margin-inline: auto;
+  width: 100%;
+  background-image: url(../assets/images/desktop/bg.png);
+  background-size: cover;     
+  background-repeat: no-repeat;
+  background-position: center 0px;  
 }
 .body-content {
-  padding: 1.2rem 14rem;
-
-  @include lg {
-    padding: 3.2rem 7rem;
-  }
-
-  @include md {
-    padding: 1.8rem 2.7rem;
-  }
+  padding: 1% 10%;
+  width: 100%;
 }
 button{
   padding: 15px 25px;
