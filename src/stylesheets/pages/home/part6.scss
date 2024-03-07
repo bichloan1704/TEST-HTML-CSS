@@ -15,36 +15,61 @@
     border-radius: 10px;
     border: 1px solid #E6E0EC;    
     @include shadow;
+    @include md{
+        width: 578px;
+        height: 407px;
+    }
+    @include sm{
+        width: 322px;
+        height: 227px;
+    }
 }
 .part6 .child{
     background-image: url(../assets/images/desktop/part6_child.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0px;
-    width: 29%;
-    height: 321px;
-    top: 4587px;
-    left: 35%;
+    width: 452px;
+    height: 300px;
+    position: relative;
+    left: 50%;
+    top: 115%;
+    transform: translate(-50%, -50%);
     border-radius: 10px;
-    border: 1px;
-    gap: 20px;
-    position: absolute;
-    bottom: 0px;
+    border: 1px solid #E6E0EC;
     @include shadow;
+    @include md{
+        width: 313px;
+        height: 263px;
+        top: 120%;
+    }
+    @include sm{
+        width: 205px;
+        height: 164px;           
+        top: 125%;
+    }
+    
 }
 .part6 .child .text1{
-    margin-top: 141px;    
-    @include font(24px, 500);
+    margin-top: 30%;    
     max-width: 324px;
+    @include font(24px, 500);
+    @include sm{
+        @include font(11px, 500);
+        margin-top: 35%;    
+    }
 }
-.part6 .child .button{
+.part6 .child button{
     @include font(16px, 500);
     @include shadow;
     background-color: #252739;
     color: white;
-    margin-top: 30px;
+    margin-top: 7%;
     max-width: 196px;
-    height: 56px;
-    padding: 16px, 24px, 16px, 24px;
+    height: 18%;
+    padding: 0% 6%;
     border-radius: 10px;
-    gap: 10px;
+    @include sm{
+        @include font(12px, 500);
+    }
 }
