@@ -1,16 +1,42 @@
 $media: (
-  'tablet': 1088px,
-  'phone': 720px
+  'lg': 1089px,
+  'md': 757px,
+  'sm': 581px,
+  'xs': 391px
 );
 
-@mixin tablet {
-  @media screen and (max-width: map-get($media, 'tablet')) {
+@mixin xxl {
+  @media screen and (max-width: map-get($media, 'xxl')) {
     @content;
   }
 }
 
-@mixin phone {
-  @media screen and (max-width: map-get($media, 'phone')) {
+@mixin xl {
+  @media screen and (max-width: map-get($media, 'xl')) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media screen and (max-width: map-get($media, 'lg')) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: map-get($media, 'md')) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media screen and (max-width: map-get($media, 'sm')) {
+    @content;
+  }
+}
+
+@mixin xs {
+  @media screen and (max-width: map-get($media, 'xs')) {
     @content;
   }
 }

@@ -2,18 +2,22 @@
 @forward 'footer';
 @forward 'header';
 
-body{
-  
-}
 .container {
   width: 100%;
   background-image: url(../assets/images/desktop/bg.png);
   background-size: cover;     
   background-repeat: no-repeat;
   background-position: center 0px;  
+  @include md{
+    background-image: url(../assets/images/tablet/bg.png);
+  }
+  @include xs{
+    background-image: url(../assets/images/mobile/bg.png);
+    background-size: contain;
+  }
 }
 .body-content {
-  padding: 1% 10%;
+  padding: 1% 8%;
   width: 100%;
 }
 button{
@@ -21,4 +25,12 @@ button{
   border-radius: 10px;
   box-shadow: 1px 15px 11px 0px #0000001A;
   border: none;
+}
+@include sm{
+  .text-hidden{
+    display: none;
+  }
+  .body-content{
+    padding: 1% 15px;
+  }  
 }

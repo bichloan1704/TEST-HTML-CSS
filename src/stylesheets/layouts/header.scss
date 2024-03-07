@@ -1,20 +1,14 @@
 @use '../abstracts' as *;
 
-.header{
-//  width: 100%;   
-}
 .header, .header-middle, .header-right{
   @include between{
       align-items: center;
   }
   font-size: 16px;    
 }
-.header-middle{
-    // margin: 0px 100px;
-}
 .menus{
     margin: 2rem;   
-    @include tablet{
+    @include lg{
         display: none;        
     }
 }
@@ -36,7 +30,7 @@
 .header-right .login{
     max-width: 48px;
     height: 24px;
-    @include phone{
+    @include sm{
         display: none;
     }
 }
@@ -44,7 +38,7 @@
     max-width: 102px;
     height: 44px;
     margin-top: 25px;
-    @include phone{
+    @include sm{
         display: none;
     }
 }
@@ -57,7 +51,7 @@
 }
 .header-right .menu_icon{
     display: none;
-    @include tablet{
+    @include lg{
         display: block;
     }
 }    

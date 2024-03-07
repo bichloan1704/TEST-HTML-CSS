@@ -4,14 +4,18 @@
     background-color: #FFFFFF;
     border: 1px solid #E6E0EC;
     border-radius: 10px;
-    width: 266px;
-    height: 379px;
+    min-width: 266px;
+    min-height: 379px;
     padding-left: 16px;
     @include shadow;
-    overflow: hidden;
+    padding: 16px;
 }
 .port .body{
     width: 234px;
+}
+.port ul{
+    list-style-type: disc;
+    margin-left: 20px;
 }
 .port .body_2, .port .body_3, .port .body_4{
     @include  between;
@@ -19,7 +23,7 @@
     color: $black;
 }
 .port .body_2 .tag{
-    @include font(14px, 500);
+    width: fit-content;
     border: 1px solid #E6E0EC;
     border-radius: 10px;
     background-color: #F7F8FD;
@@ -28,7 +32,7 @@
 }
 .port .body_2 .price{
     @include font(24px, 500);   
-    margin-top: 4px;
+    margin-top: 10px;
 }
 .port .body_3{
     font-size: 14px;
@@ -38,4 +42,12 @@
     @include  between{
         align-items: center;
     };
+}
+.port strong{
+    @include font(15px, 500);
+}
+@include lg{
+    .hidden{
+        display: none;
+    }
 }

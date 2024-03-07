@@ -5,30 +5,44 @@
 }
 .part3-contanier{
     margin-left: 2%;
-    // width: fit-content;
-    // max-width: 1024px;
-    // height: 751px;
     background-image: url(../assets/images/desktop/part3.png);
     background-size: cover;
     background-position: center 0px;
     background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 10px 20px 50px 10px #0000001A;
+    @include xs{
+        width: 358px;
+        height: 498px;
+        background-image: url(../assets/images/mobile/part3.png);
+    }
 }
 .part3 .text1{
-    padding-top: 440px;
+    padding-top: 43%;
+    @include xs{        
+        padding-top: 290px;
+    }
 }
 .part3 .text1, .part3 .text2, .part3 .text3{
     @include font(45px, 500);
     color: $text-grey;
+    @include xs{
+        @include font(28px, 500);        
+    }
 }
 .part3 .text4{
     @include font(16px, 500);
     margin-top: 20px;
+    @include xs{
+        @include font(12px, 500);
+    }
 }
 .part3-button{
     @include blackbutton;
     margin: 60px;
+    @include xs{
+        margin: 40px;
+    }
 }
 .part3 .text2{
     @include gradient;

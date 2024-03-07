@@ -1,7 +1,10 @@
 @use "../../abstracts/" as *;
 
 .part2{
-    margin-top: 250px;
+    margin-top: 20%;
+    @include xs{
+        margin-top: 130px;
+    }
 }
 .part2-button{
     background: white;
@@ -12,7 +15,10 @@
     margin-bottom: 30px;
 } 
 .part2 .text1, .part2 .text2, .part2 .text3{    
-    @include font(57px, 600)
+    @include font(57px, 600);
+    @include sm{
+        @include font(24px, 600);
+    }
 }
 .part2 .text1{
     @include gradient

@@ -9,7 +9,7 @@
     width: 100%;
 }
 .part7 .head .text1{
-    @include font(24px, 500);
+    @include font(2em, 500);
     color: $text-grey;
 }
 .part7 .head .text2{
@@ -24,20 +24,32 @@
     height: 844px;
     margin-top: 90px;   
     @include center-element; 
+    @include sm{
+        background-image: url(../assets/images/mobile/part7.png);
+        background-repeat: no-repeat;
+        background-position: center 0px;
+        height: 500px;
+    }
 }
 .part7 .body .child{
+    margin: 0px 50px;
     background-color: white;
     padding: 24px;
     width: 327px;
     border-radius: 10px;
     border: 1px solid #E6E0EC;
     @include shadow;
+    @include sm{
+        // width: 213px;
+        // height: 135px
+    }
 }
 .part7 .body .child .text1{
-    @include font(22px, 600);
+    @include font(2rem, 600);
     color: black;
     margin: 10px 0px;
 }
-.part7 .body .child .text1{
+.part7 .body .child .text2{
     @include font(14px, 500);
+    color: $text-grey;
 }

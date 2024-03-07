@@ -7,6 +7,9 @@
 .count .text1{
     @include gradient;
     @include font(45px, 600);
+    @include sm{
+        @include font(32px, 600);
+    }
 }
 .count .text2{
     @include font(16px, 500);
