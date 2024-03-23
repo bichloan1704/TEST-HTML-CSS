@@ -2,46 +2,60 @@
 
 .part7{
     @include center-element;
-    // width: 100%;
-    margin-top: 500px;
+    margin-top: 40%;
 }
 .part7-container{
     width: 100%;
 }
 .part7 .head .text1{
-    @include font(2em, 500);
+    @include font(24px, 500);
     color: $text-grey;
+    @include md{
+        @include font(22px, 500);
+        // padding-top: 100%;
+    }
 }
 .part7 .head .text2{
     @include font(45px, 600);
-    margin-top: 20px;
+    margin-top: 1%;
+    @include lg{
+        @include font(36px, 500);
+    }
+    @include md{
+        @include font(24px, 500);
+    }
 }
 .part7 .body{
     background-image: url(../assets/images/desktop/part7.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center 0px;
     width: 100%;
     height: 844px;
-    margin-top: 90px;   
-    @include center-element; 
+    margin-top: 7%;
+    @include md{
+        height: 400px;
+    }
     @include sm{
-        background-image: url(../assets/images/mobile/part7.png);
-        background-repeat: no-repeat;
-        background-position: center 0px;
-        height: 500px;
+        height: 278px;
     }
 }
 .part7 .body .child{
-    margin: 0px 50px;
     background-color: white;
     padding: 24px;
     width: 327px;
     border-radius: 10px;
-    border: 1px solid #E6E0EC;
+    border: 1px solid #E6E0EC;    
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     @include shadow;
+    @include md{
+        top: 65%;
+    }
     @include sm{
-        // width: 213px;
-        // height: 135px
+        top: 80%
     }
 }
 .part7 .body .child .text1{

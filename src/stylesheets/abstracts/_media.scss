@@ -5,18 +5,6 @@ $media: (
   'xs': 391px
 );
 
-@mixin xxl {
-  @media screen and (max-width: map-get($media, 'xxl')) {
-    @content;
-  }
-}
-
-@mixin xl {
-  @media screen and (max-width: map-get($media, 'xl')) {
-    @content;
-  }
-}
-
 @mixin lg {
   @media screen and (max-width: map-get($media, 'lg')) {
     @content;
